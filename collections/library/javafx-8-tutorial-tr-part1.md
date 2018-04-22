@@ -6,7 +6,7 @@ updated: 2015-05-16 00:00
 slug: javafx-8-tutorial/tr/part1
 canonical: /library/javafx-8-tutorial/part1/
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-tr-part1.md
-description: "Learn how to set up a JavaFX project. This is part one of a seven-part tutorial about designing, programming and deploying an address application with JavaFX."
+description: "Bir JavaFX projesinin nasıl oluşturulduğunu öğrenin ve JavaFX ile bir adres uygulaması oluşturun."
 image: /assets/library/javafx-8-tutorial/part1/addressapp-part1.png
 published: true
 prettify: true
@@ -21,66 +21,62 @@ sidebars:
     link: /library/javafx-8-tutorial/tr/part1/
     paging: 1
     active: true
-  - text: "Part 2: Model and TableView"
+  - text: "Part 2: Model ve TableView"
     link: /library/javafx-8-tutorial/tr/part2/
     paging: 2
-  - text: "Part 3: Interacting with the User"
+  - text: "Part 3: Kullanıcı ile etkileşim"
     link: /library/javafx-8-tutorial/tr/part3/
     paging: 3
-  - text: "Part 4: CSS Styling"
+  - text: "Part 4: CSS Düzenlemeleri"
     link: /library/javafx-8-tutorial/tr/part4/
     paging: 4
-  - text: "Part 5: Storing Data as XML"
+  - text: "Part 5: Veriyi XML olarak saklamak"
     link: /library/javafx-8-tutorial/tr/part5/
     paging: 5
-  - text: "Part 6: Statistics Chart"
+  - text: "Part 6: İstatistik Grafikleri"
     link: /library/javafx-8-tutorial/tr/part6/
     paging: 6
-  - text: "Part 7: Deployment"
+  - text: "Part 7: Yayınlama"
     link: /library/javafx-8-tutorial/tr/part7/
     paging: 7
-- header: "Download Sources"
+- header: "Kaynakları İndirin"
   body:
-  - text: Part 1 as Eclipse Project <em>(requires at least JDK 8u40)</em>
+  - text: Part 1'i Eclipse Projesi Olarak İndirin <em>(Minimum JDK 8u40 gerektirir)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-1.zip
     icon-css: fa fa-fw fa-download
 languages: 
-  header: Languages
+  header: Diller
   collection: library
   item: javafx-8-tutorial
   part: part1
   active: tr
 ---
 
-<div class="alert alert-warning">
-  <i class="fa fa-language"></i> This page needs a Turkish translation. If you'd like to help out please read <a href="/library/how-to-contribute/" class="alert-link">how to contribute</a>.
-</div>
-
 ![Screenshot AddressApp Part 1](/assets/library/javafx-8-tutorial/part1/addressapp-part1.png)
 
-### Topics in Part 1
+### Part 1 Konuları
 
-* Getting to know JavaFX
-* Creating and starting a JavaFX Project
-* Using Scene Builder to design the user interface
-* Basic application structure using the Model-View-Controller (MVC) pattern
+* Java FX'i ile Tanışma
+* Bir JavaFX projesi oluşturma ve projeye başlama
+* Scene Builder kullanarak kullanıcı arayüzü tasarlama
+* Model-View-Controller (MVC) yapısını kullanarak temel uygulama mimarisi oluşturma
 
 
 *****
 
 
-### Prerequisites
+### Ön Şartlar
 
-* Latest [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) (includes **JavaFX 8**).
-* Eclipse 4.4 or greater with e(fx)clipse plugin. The easiest way is to download the preconfigured distro from the [e(fx)clipse website](http://efxclipse.bestsolution.at/install.html#all-in-one). As an alternative you can use an [update site](http://www.eclipse.org/efxclipse/install.html) for your Eclipse installation.
-* [Scene Builder 8.0](http://gluonhq.com/products/scene-builder/) (provided by Gluon because [Oracle only ships it in source code form](http://www.oracle.com/technetwork/java/javase/downloads/sb2download-2177776.html)).
+* Son Sürüm [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) (**JavaFX 8** dahil).
+* Eclipse 4.4 ve üstü veya e(fx)clipse plugini. Edinmenin en kolay yolu [e(fx)clipse website](http://efxclipse.bestsolution.at/install.html#all-in-one)'sinden önceden konfigüre edilmiş sürümü indirmek. Alternatif olarak Eclipse kurulumnuz için [güncelleme sitesi](http://www.eclipse.org/efxclipse/install.html) kullanabilirsiniz.
+* [Scene Builder 8.0](http://gluonhq.com/products/scene-builder/) (Gluon tarafından sunulmuştur çünkü [Oracle yalnızca kaynak kodu yayınlamaktadır](http://www.oracle.com/technetwork/java/javase/downloads/sb2download-2177776.html)).
 
 
-### Eclipse Configurations 
+### Eclipse Konfigürasyonları
 
-We need to tell Eclipse to use JDK 8 and also where it will find the Scene Builder:
+Eclipse'in JDK 8'i ve Scene Builder'i kullanmasını sağlamalıyız:
 
-1. Open the Eclipse Preferences and navigate to *Java | Installed JREs*.
+1. Eclipse Preferences'i açın ve *Java | Installed JREs* ayarlarına gidin.
 
 2. Click *Add...*, select *Standard VM* and choose the installation *Directory* of your JDK 8.
 
